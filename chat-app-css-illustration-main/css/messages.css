@@ -1,0 +1,84 @@
+/* messages */
+.messages {
+  display: flex;
+  padding: 0.78rem 0rem;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+/* Holders */
+.messages__received-holder {
+  place-self: flex-start;
+  background-color: var(--LightGrayishVioletTwo);
+  max-width: 54%;
+  width: auto;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.6rem;
+  border-bottom-left-radius: 0.2rem;
+}
+.messages__sent-holder {
+  place-self: flex-end;
+  background-color: var(--White);
+  max-width: 54%;
+  width: auto;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.6rem;
+  border-bottom-right-radius: 0.2rem;
+}
+/* Holders img*/
+.messages__sent-holder.messages-img {
+  background: none;
+  max-width: 66%;
+  padding: 0rem;
+}
+/* Messages received and sent*/
+.messages__received {
+  color: var(--ModerateViolet);
+  font-size: 0.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.messages__sent {
+  color: var(--DesaturatedDarkViolet);
+  font-size: 0.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+/* messages img */
+.messages--img {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+}
+.messages__img:hover {
+  cursor: pointer;
+}
+.messages__img-holder {
+  width: 2.51rem;
+  height: auto;
+}
+.messages__img {
+  border-radius: 0.6rem;
+  width: 100%;
+  height: auto;
+}
+/* messages charge*/
+.messages-charge {
+  max-width: 67%;
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.6rem;
+  border-bottom-left-radius: 0.2rem;
+  cursor: pointer;
+}
+.messages__received-charge {
+  place-self: flex-start;
+  background-image: linear-gradient(
+    to right,
+    var(--LightMagenta),
+    var(--LightViolet)
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

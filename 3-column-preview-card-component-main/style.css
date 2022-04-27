@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/* font-family: 'Big Shoulders Display', cursive; */
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    /* (paragraphs) */
+    --Transparentwhite : hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --Verylightgray: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--Verylightgray);
+    display: grid;
+    place-items: center;
+    place-content: center;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    min-height: 100vh;
+}
+.cars-type {
+    background-color: var(--Verylightgray);
+    padding: 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start; 
+    width: 90%;
+    transition: max-width 500ms ease;
+    max-width: 600px;
+}
+.cars-type__sedans {
+    background-color: var(--Brightorange);
+    padding: 45px;
+    border-radius: 8px 8px 0 0;
+}
+.cars-type__suvs {
+    background-color: var(--Darkcyan);
+    padding: 45px;
+}
+.cars-type__luxury {
+    background-color: var(--Verydarkcyan);
+    padding: 45px;
+    border-radius: 0 0 8px 8px;
+}
+.cars-type__img-container img{
+    margin-bottom: 28px;
+}
+.cars-type__heading {
+    color: var(--Verylightgray);
+    text-transform:uppercase ;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 40px;
+}
+.cars-type__description {
+    color: var(--Transparentwhite);
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.cars-type__button {
+    border-style: none;
+    cursor: pointer;
+    background-color: var(--Verylightgray);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 12px 25px;
+    border-radius: 60px;
+    border: 2px solid var(--Verylightgray);
+}
+.cars-type__sedans .cars-type__button{
+    color: var(--Brightorange);
+}
+.cars-type__suvs .cars-type__button{
+    color: var(--Darkcyan);
+}
+.cars-type__luxury .cars-type__button{
+    color: var(--Verydarkcyan);
+}
+.cars-type__sedans .cars-type__button:hover{
+    background-color: var(--Brightorange);
+    color: var(--Transparentwhite);
+}
+.cars-type__suvs .cars-type__button:hover{
+    background-color: var(--Darkcyan);
+    color: var(--Transparentwhite);
+}
+.cars-type__luxury .cars-type__button:hover{
+    background-color: var(--Verydarkcyan);
+    color: var(--Transparentwhite);
+}
+@media only screen and (min-width: 1000px) {
+    .cars-type {
+        flex-flow: row nowrap;
+        transition: max-width 250ms ease;
+        max-width: 1000px;
+    }
+    .cars-type__sedans {
+        border-radius: 8px 0 0 8px;
+    }
+    .cars-type__luxury {
+        border-radius: 0 8px 8px 0 ;
+    }
+    .cars-type__description {
+        margin-bottom: 75px;
+    }
+}

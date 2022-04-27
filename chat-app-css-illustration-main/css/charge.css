@@ -1,0 +1,20 @@
+/* Charge */
+.charge__info {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.charge__icon {
+  color: var(--VeryLightMagenta);
+}
+.charge__description {
+  color: #f5f3f7;
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+.charge__price {
+  color: var(--White);
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-right: 0.4rem;
+}
